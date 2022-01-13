@@ -4,6 +4,8 @@
  * @return {number} the area of the square
 **/
 function find_area_square(length, width){
+    let area = (length * width)
+    return (area);
 
 }
 
@@ -13,6 +15,13 @@ function find_area_square(length, width){
  * @return {number} the sum of all the numbers
 **/
 function sum_of_numbers(numbers){
+    
+    let total_sum = 0;
+    
+    for(i = 0; i < numbers.length; i++){
+        total_sum = total_sum + numbers[i];
+        }
+    return(total_sum);
 
 }
 
@@ -23,7 +32,11 @@ function sum_of_numbers(numbers){
  * @return {number} the smaller of the number
 **/
 function find_smaller_number(a, b){
-
+if(a<b){
+    console.log("a is the smaller number: " + a)
+}else{
+    console.log("bis the smaller number: " + b)
+}
 }
 
 
@@ -32,9 +45,11 @@ function find_smaller_number(a, b){
  * @return {number} the smallest number in the array
 **/
 
-function find_smallest_number(numbers){
-
-}
+function find_smallest_number([numbers]){
+    smallest = Math.min([numbers]);
+    return (smallest);
+    console.log(smallest);
+    }
 
 
 
@@ -44,8 +59,10 @@ function find_smallest_number(numbers){
  * @return {string} the first {length} number of letters of the word
 **/
 
-function abbreviate(word, length){
 
+function abbreviate(word, length){
+    
+    console.log()
 }
 
 
@@ -56,7 +73,8 @@ function abbreviate(word, length){
 **/
 
 function get_full_name(first_name, last_name){
-
+    full_name = (last_name + "," +first_name)
+    return (full_name);
 }
 
 /**
