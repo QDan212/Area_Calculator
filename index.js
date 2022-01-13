@@ -3,4 +3,4 @@ function area_calculator(length,width){
     return area;
 }
 
-console.log(area_calculator(5,15));
+console.log(area_calculator(5,4));
