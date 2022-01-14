@@ -17,7 +17,7 @@ function find_area_square(length, width){
 function sum_of_numbers(numbers){
     
     let total_sum = 0;
-    
+
     for(i = 0; i < numbers.length; i++){
         total_sum = total_sum + numbers[i];
         }
@@ -45,10 +45,10 @@ if(a<b){
  * @return {number} the smallest number in the array
 **/
 
-function find_smallest_number([numbers]){
-    smallest = Math.min([numbers]);
+function find_smallest_number(numbers){
+    smallest = Math.min(...numbers);
     return (smallest);
-    console.log(smallest);
+    
     }
 
 
@@ -61,8 +61,13 @@ function find_smallest_number([numbers]){
 
 
 function abbreviate(word, length){
+    let answer = "";
     
-    console.log()
+    for(i = 0; i < length; i++){
+        answer = answer + word[i]
+
+    }
+    return (answer);
 }
 
 
@@ -73,7 +78,7 @@ function abbreviate(word, length){
 **/
 
 function get_full_name(first_name, last_name){
-    full_name = (last_name + "," +first_name)
+    full_name = (last_name + "," + first_name)
     return (full_name);
 }
 
